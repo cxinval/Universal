@@ -1,0 +1,486 @@
+@media ( max-width: 1200px )
+  .container
+    max-width: 940px
+  .header
+    &-navbar
+      &__list
+        max-width: 433px !important
+  .primiera
+    &-wrap
+      &-item
+        min-width: auto !important
+        max-width: 198px !important
+  .articles
+    &-items
+      grid-template-columns: repeat(3, 263px) !important
+      grid-template-rows: repeat(6, 170px) !important
+    .articles-forth
+      grid-column: 3
+      grid-row: 4/5
+    .articles-second
+      grid-row: 5/6
+      grid-column: 2
+    .articles-ninth
+      grid-row: 4
+  .information-left__img
+    max-width: 249px !important
+  .information-left-wrap
+    max-height: none !important
+  .information-left
+    max-width: 645px !important
+  .blocks__container
+    display: flex
+    justify-content: initial
+    flex-direction: column
+    align-items: center
+  .blocks-frist, .blocks-second
+    margin-bottom: 20px
+  .items-item
+    min-width: auto !important
+  .footer-info__text
+    max-width: 530px
+@media ( max-width: 992px )
+  .container
+    max-width: 725px
+  .articles-container
+    max-width: 559px
+  .header-navbar
+    width: 100%
+    background-color: #262D33
+    top: 0
+    left: 0
+    right: 0
+    position: fixed
+    z-index: 10 !important
+    margin: 0 !important
+  .header-information
+    margin-top: 101px
+  .header-navbar__logo
+    margin-left: 3%
+  .header-navbar__list
+    display: none !important
+  .header-navbar__search
+    display: none
+  .primiera-wrap-item
+    max-width: 133px
+  .primiera-wrap__img
+    width: 45px !important
+    height: 45px  !important
+  .primiera-wrap__title
+    max-width: 90px !important
+  .articles-items
+    grid-template-columns: repeat(2, 263px) !important
+    grid-template-rows: repeat(9, 170px) !important
+  .articles-third
+    grid-column: 1
+    grid-row: 7
+  .articles-fifth
+    grid-column: 1
+    grid-row: 5/6
+  .articles-sixth
+    grid-column: 1
+    grid-row: 3
+  .articles-seventh
+    grid-column: 2
+    grid-row: 4
+  .articles-tens
+    grid-column: 2
+    grid-row: 7
+  .articles-forth
+    grid-column: 1 !important
+    grid-row: 8/9  !important
+  .banner__title
+    max-width: 464px !important
+    font-size: 19px !important
+    line-height: 36px !important
+  .information-container
+    display: flex
+    align-items: center !important
+    flex-direction: column
+  .information-left
+    margin-bottom: 20px
+  .information-right
+    max-width: 484px !important
+    width: 100% !important
+  .information-right__readmore
+    padding: 11px 215px 14px 200px !important
+
+  .items-item__link
+    font-size: 12px !important
+  .items-item__title
+    font-size: 12px !important
+  .items-item__link:not(:last-child)
+    margin-bottom: 10px !important
+  .items-item__title
+    margin-bottom: 15px !important
+  .footer-wrap
+    flex-direction: column
+    align-items: flex-start !important
+  .footer-links
+    margin-bottom: 15px
+  .footer-info__text
+    font-size: 12px !important
+    max-width: 425px !important
+  .footer-info__span
+    font-size: 12px !important
+  .menu-button__line
+    width: 16px
+    height: 1px
+    background-color: #ffffff
+  .navbar-top__menu-button
+    display: flex !important
+    width: 16px
+    height: 11px
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    border: none
+    background-color: #262D33
+    cursor: pointer
+    padding: 0
+    outline: none
+    position: absolute
+    top: 30px
+    right: 3%
+  .header-mobi-menu
+
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 80px
+    left: 0
+    right: 0
+    bottom: 0
+    flex-direction: column
+    display: none
+    background-color: #262D33
+    z-index: 50
+    &--visible
+      display: flex !important
+  .header-mobi-menu__list
+    min-width: 100% !important
+    overflow-y: scroll
+    display: flex !important
+    flex-direction: column
+    z-index: 51
+    align-items: center
+    order: 2
+  .header-mobi-menu__link
+    margin-bottom: 20px
+  .header-mobi-menu__search
+    display: flex !important
+    order: 1
+    margin: 0 auto
+    margin-bottom: 30px
+@media ( max-height: 384px )
+  .header-mobi-menu
+    max-height: 82vh
+    overflow-y: auto
+  .modal__dialog 
+    max-height: 95vh
+    overflow-y: auto 
+
+@media ( max-width: 768px )
+  .container
+    max-width: 512px
+  .header
+    max-height: none !important
+  .header-autor
+    margin-bottom: 20px !important
+  .header-information
+    display: flex
+    flex-direction: column
+    min-height: auto !important
+  .header-information-right
+    max-width: none !important
+  .navbar-top__menu-button
+    right: 9%
+  .header-navbar__logo
+    left: 5%
+  .primiera-wrap
+    flex-direction: column
+    max-height: none !important
+    align-items: flex-start !important
+  .primiera-wrap-item:not(:last-child)::before
+    content: ""
+    width: 0 !important
+    height: 0 !important
+    position: static !important
+    top: 0 !important
+    right: 0 !important
+    background: #262D33 !important
+    z-index: 0 !important
+  .primiera-wrap-item
+    width: 100% !important
+    margin-bottom: 20px
+    max-width: none !important
+    justify-content: initial !important
+  .primiera-wrap__img
+    width: 60px !important
+    height: 60px !important
+    margin-left: auto
+  .primiera-wrap__title
+    max-width: none !important
+  .articles-items
+    grid-template-columns: repeat(2, 241px) !important
+  .articles-frist__title
+    font-size: 22px !important
+  .articles-frist__text
+    font-size: 12px !important
+  .articles-frist-coment__name
+    font-size: 12px !important
+  .articles-frist-coment__text
+    font-size: 12px !important
+  .articles-second
+    max-height: 370px
+    overflow-y: auto
+  .articles-second__text
+    max-width: none !important
+    width: 100% !important
+    font-size: 12px !important
+  .articles-second-coment__name
+    max-width: none !important
+    font-size: 12px !important
+  .articles-second-coment__data ,.articles-second-coment__number
+    font-size: 9px !important
+  .articles-third
+    max-height: 170px
+    overflow-y: auto
+  .articles-forth
+    max-height: 370px
+    overflow-y: auto
+  .information-left-item
+    align-items: flex-start !important
+    flex-direction: column
+  .information-left__img
+    max-width: none !important
+    margin-bottom: 30px
+  .swiper-blocks-frist
+    max-width: 510px !important
+  .blocks-frist__title
+    font-size: 34px !important
+  .blocks-second__bgc
+    width: 97%
+  .blocks__wrapper
+    min-width: 507px !important
+    overflow: hidden
+  .blocks-third-wrapper
+    max-width: 232px !important
+  .items-container
+    flex-direction: column
+  .items-item__link, .items-item__title
+    font-size: 14px !important
+  .footer-info__text, .footer-info__span
+    font-size: 8px !important
+  .footer-info__text
+    max-width: 273px !important
+  .modal__dialog
+    padding: 33px 19px !important
+
+@media ( max-width: 568px )
+  .container
+    max-width: 396px
+  .header-information-left
+    padding-top: 17px
+  .header-info__title
+    font-size: 23px !important
+    line-height: 32px !important
+  .header-info
+    min-height: 165px !important
+    max-height: 165px !important
+  .articles-items
+    grid-template-columns: repeat(2, 47%) !important
+    grid-template-rows: repeat(14, 170px) !important
+  .articles-frist
+    background-size: 225px 246px !important
+    background-position: top 89px right !important
+  .articles-frist-coment
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+  .articles-frist-coment__img
+    margin-left: 15px !important
+  .articles-frist__title
+    max-width: 343px !important
+  .articles-frist-coment__text
+    margin-left: 15px
+    margin-top: 10px
+  .articles-eighth
+    grid-column: 1/2 !important
+    grid-row: 6  !important
+  .articles-sixth
+    grid-column: span 2 !important
+    max-width: none !important
+    width: 100%
+  .articles-seventh
+    grid-column: 2 span !important
+    max-width: none !important
+    width: 100%
+  .articles-fifth
+    grid-column: span 2 !important
+    grid-row: 5/6 !important
+    width: 100%
+    max-width: none !important
+  .articles-second
+    grid-column: span 2 !important
+    grid-row: 9/10 !important
+    width: 100%
+    max-width: none !important
+  .articles-forth
+    grid-column: span 2 !important
+    grid-row: 7/8 !important
+    max-width: none !important
+    width: 100%
+  .articles-eighth
+    grid-column: span 2 !important
+    grid-row: 7 !important
+    max-width: none !important
+    width: 100%
+  .articles-third
+    grid-column: span 2 !important
+    grid-row: 13 !important
+    max-width: none !important
+    width: 100%
+    overflow: hidden
+  .articles-tens
+    grid-column: span 2 !important
+    grid-row: 14 !important
+    max-width: none !important
+    width: 100%
+  .articles-eighth
+    grid-column: span 2 !important
+    grid-row: 11 !important
+    max-width: none !important
+    width: 100%
+  .articles-ninth
+    grid-column: span 2 !important
+    grid-row: 12 !important
+    max-width: none !important
+    width: 100%
+  .information-right__readmore
+    padding: 11px 169px 14px 159px !important
+  .swiper-blocks-frist
+    max-width: 396px !important
+    max-height: 300px
+  .swiper-blocks-frist__bull
+    left: 50% !important
+    bottom: 14px !important
+    transform: translateX(-71%)
+  .blocks-frist-wrap
+    padding: 10px 0 63px 0 !important
+  .blocks-frist__position
+    margin-bottom: 0 !important
+  .blocks-frist__title
+    font-size: 20px !important
+    line-height: 34px !important
+  .blocks__wrapper
+    min-width: 391px !important
+    max-height: none !important
+  .blocks-second__bgc
+    left: 44px !important
+  .blocks-second__bgc
+    width: 88% !important
+  .blocks-third
+    flex-direction: column
+  .blocks-third-wrapper
+    max-width: none !important
+    &:not(:last-child)
+      margin-bottom: 20px
+
+  .blocks-third-wrapper
+    max-width: none !important
+
+  .mail__title
+    font-size: 29px !important
+    line-height: 34px !important
+  .mail__input
+    max-width: 264px !important
+  .footer-links
+    flex-direction: column
+    align-items: flex-start !important
+  .footer-wrap__logo
+    margin-bottom: 15px
+  .footer__link
+    margin-bottom: 20px
+
+  .modal__dialog
+    max-width: 326px !important
+    width: 100%
+    top: 38%
+@media ( max-width: 468px )
+  .container
+    max-width: 263px
+  .header-information-left
+    padding: 30px 0 100px 14px !important
+  .header-navbar__logo
+    margin-left: 8% !important
+  .navbar-top__menu-button
+    right: 11% !important
+  .primiera-wrap__title
+    font-size: 12px !important
+  .articles-frist
+    background-size: 152px 180px !important
+    background-position: top 178px right !important
+  .articles-frist-coment__img
+    margin-left: 0 !important
+  .articles-frist-coment__text
+    margin-left: 0
+    margin-bottom: 10px
+  .articles-frist-coment
+    border-top: none !important
+    padding-left: 15px !important
+  .articles-items
+    grid-template-columns: repeat(2, 44%) !important
+    grid-template-rows: repeat(14, 203px) !important
+  .articles-frist__span, .articles-frist__title, .articles-frist__text
+    padding-left: 15px !important
+  .articles-frist__text
+    color: #262D33 !important
+  .articles-frist-coment__text
+    font-size: 11px !important
+  .articles-frist__title
+    margin-bottom: 4px !important
+  .articles-frist-coment
+    padding-top: 32px !important
+  .articles-fifth
+    min-height: 434px !important
+  .articles-fifth__title
+    padding: 44px 0 30px 25px !important
+  .articles-forth
+    min-height: 435px !important
+  .articles-forth__link
+    margin-bottom: 21px !important
+  .articles-second
+    min-height: 435px !important
+  .articles-second__text
+    margin-bottom: 86px !important
+  .articles-third
+    min-height: 203px !important
+  .articles-third__pdf
+    margin-bottom: 50px !important
+  .information-right__readmore
+    padding: 11px 98px 14px 97px !important
+  .swiper-blocks-frist
+    max-width: 274px !important
+  .blocks-frist__button
+    font-size: 9px !important
+    padding: 6px 14px
+  .blocks-frist__number
+    font-size: 9px !important
+  .blocks-frist__title
+    margin-bottom: 20px !important
+  .swiper-blocks-frist__bull
+    transform: translateX(-127%)
+  .blocks-second
+    overflow: hidden
+  .blocks__wrapper
+    min-width: 269px !important
+  .blocks-second__title
+    font-size: 21px !important
+  .mail__button
+    position: static !important
+    margin: 0 auto
+    margin-top: 15px
+  .footer-info
+    flex-direction: column
+    align-items: flex-start !important
