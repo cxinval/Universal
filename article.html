@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Universal</title>
@@ -26,10 +26,10 @@
         <li class="header-navbar__link header-navbar__link--article">Web Design</li>
       </ul>
       <input type="text" class="header-navbar__search header-navbar__search--article" placeholder="Поиск">
-      <button class="button menu-button navbar-top__menu-button">
-        <span class="menu-button__line"></span>
-        <span class="menu-button__line"></span>
-        <span class="menu-button__line"></span>
+      <button class="button menu-button navbar-top__menu-button navbar-top__menu-button--article">
+        <span class="menu-button__line menu-button__line--article"></span>
+        <span class="menu-button__line menu-button__line--article"></span>
+        <span class="menu-button__line menu-button__line--article"></span>
       </button>
       <div class="header-mobi-menu menu-buttonn">
         <ul class="header-navbar__list header-mobi-menu__list">
@@ -121,11 +121,10 @@
   <div class="container paragraf-container">
     <div class="paragraf-wrap">
       <div class="paragraf-block">
-        <img src="img/M.svg" alt="" class="paragraf-block__m">
-        <p class="paragraf__text paragraf-block__text">Идейные соображения высшего порядка, а также рамки и место
+        <span class="paragraf-block__text-span" ><span class="paragraf-block__text--span">И</span><p class="paragraf__text paragraf-block__text">дейные соображения высшего порядка, а также рамки и место
           обучения
           кадров играет важную роль в формировании дальнейших
-          направлений развития.</p>
+          направлений развития.</p></span>
       </div>
       <p class="paragraf__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную
         роль
@@ -165,31 +164,9 @@
     <div class="swiper-wrapper article-slide-items">
       <div class="article-slide-item swiper-slide">
         <img src="img/article-slide1.png" alt="" class="article-slide-item__img">
-        <div class="article-slide-item-down">
-          <span class="article-slide-item__text">Geostatistics deal with quantitative data analysis, specifically the
-            application of statistical methodology</span>
-          <div class="article-slide-item-autor">
-            <img src="img/article-slide-item-autor__icon.png" alt="" class="article-slide-item-autor__icon">
-            <div class="article-slide-item-block">
-              <span class="article-slide-item-autor__name">Андрей Вашигаев</span>
-              <span class="article-slide-item-autor__position">Фотограф</span>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="article-slide-item swiper-slide">
         <img src="img/article-slide1.png" alt="" class="article-slide-item__img">
-        <div class="article-slide-item-down">
-          <span class="article-slide-item__text">Geostatistics deal with quantitative data analysis, specifically the
-            application of statistical methodology</span>
-          <div class="article-slide-item-autor">
-            <img src="img/article-slide-item-autor__icon.png" alt="" class="article-slide-item-autor__icon">
-            <div class="article-slide-item-block">
-              <span class="article-slide-item-autor__name">Андрей Вашигаев</span>
-              <span class="article-slide-item-autor__position">Фотограф</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <div class="article-slide-arrow">
@@ -200,7 +177,17 @@
         <img class="article-slide-arrow--size" src="img/Arrow-next.svg" alt="">
       </div>
     </div>
-  </div>
+    <div class="article-slide-item-down">
+      <span class="article-slide-item__text">Geostatistics deal with quantitative data analysis, specifically the
+        application of statistical methodology</span>
+      <div class="article-slide-item-autor">
+        <img src="img/article-slide-item-autor__icon.png" alt="" class="article-slide-item-autor__icon">
+        <div class="article-slide-item-block">
+          <span class="article-slide-item-autor__name">Андрей Вашигаев</span>
+          <span class="article-slide-item-autor__position">Фотограф</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <section class="material">
@@ -229,31 +216,33 @@
           образом консультация с широким активом способствует подготовки и реализации направлений</p>
       </div>
       <div class="material-right">
-        <h3 class="material-right__title">Материал по теме</h3>
-        <img src="img/material-right.png" alt="" class="material-right__img">
-        <h4 class="material-right__subtitle">20+ инструментов <br>для js-разработчика</h4>
-        <p class="material-right__text">Узнайте, какими инструментами вы еще не пользовались, а могли бы. Эти
-          инструменты
-          помогут вам ускорить свою работу или
-          повысить ее качество. Все инструменты собраны в виде...</p>
-        <div class="material-right-block">
-          <div class="material-right__view">
-            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M15 7.26196C15 7.26196 12 12.375 7.5 12.375C3 12.375 0 7.26196 0 7.26196C0 7.26196 3 2.625 7.5 2.625C12 2.625 15 7.26196 15 7.26196ZM7.5 4.875C8.94707 4.875 10.125 6.05325 10.125 7.50082C10.125 8.94757 8.94707 10.125 7.5 10.125C6.05293 10.125 4.875 8.95085 4.875 7.50082C4.875 6.05325 6.05293 4.875 7.5 4.875ZM7.49858 8.81285C8.22277 8.81285 8.80965 8.22181 8.80965 7.4967C8.80965 6.77104 8.22222 6.18 7.49858 6.18C6.77549 6.18 6.1875 6.76939 6.1875 7.4956C6.1875 8.22181 6.77549 8.81285 7.49858 8.81285Z"
-                fill="#BCBFC2" />
-            </svg>
-            <span class="material-right__span">1,623</span>
+        <a href="#">
+          <h3 class="material-right__title">Материал по теме</h3>
+          <img src="img/material-right.png" alt="" class="material-right__img">
+          <h4 class="material-right__subtitle">20+ инструментов <br>для js-разработчика</h4>
+          <p class="material-right__text">Узнайте, какими инструментами вы еще не пользовались, а могли бы. Эти
+            инструменты
+            помогут вам ускорить свою работу или
+            повысить ее качество. Все инструменты собраны в виде...</p>
+          <div class="material-right-block">
+            <div class="material-right__view">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15 7.26196C15 7.26196 12 12.375 7.5 12.375C3 12.375 0 7.26196 0 7.26196C0 7.26196 3 2.625 7.5 2.625C12 2.625 15 7.26196 15 7.26196ZM7.5 4.875C8.94707 4.875 10.125 6.05325 10.125 7.50082C10.125 8.94757 8.94707 10.125 7.5 10.125C6.05293 10.125 4.875 8.95085 4.875 7.50082C4.875 6.05325 6.05293 4.875 7.5 4.875ZM7.49858 8.81285C8.22277 8.81285 8.80965 8.22181 8.80965 7.4967C8.80965 6.77104 8.22222 6.18 7.49858 6.18C6.77549 6.18 6.1875 6.76939 6.1875 7.4956C6.1875 8.22181 6.77549 8.81285 7.49858 8.81285Z"
+                  fill="#BCBFC2" />
+              </svg>
+              <span class="material-right__span">1,623</span>
+            </div>
+            <div class="material-right__coment">
+              <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
+                  fill="#BCBFC2" />
+              </svg>
+              <span class="material-right__span">102</span>
+            </div>
           </div>
-          <div class="material-right__coment">
-            <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
-                fill="#BCBFC2" />
-            </svg>
-            <span class="material-right__span">102</span>
-          </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -327,100 +316,108 @@
   <div class="container">
     <div class="questions-items">
       <div class="questions-item">
-        <img src="img/questions/1.png" alt="" class="questions-item__img">
-        <h3 class="questions-item__title">Техника работы по помидоркам — это как?</h3>
-        <div class="questions-block">
-          <div class="questions-view">
-            <svg class="questions-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M15 7.26196C15 7.26196 12 12.375 7.5 12.375C3 12.375 0 7.26196 0 7.26196C0 7.26196 3 2.625 7.5 2.625C12 2.625 15 7.26196 15 7.26196ZM7.5 4.875C8.94707 4.875 10.125 6.05325 10.125 7.50082C10.125 8.94757 8.94707 10.125 7.5 10.125C6.05293 10.125 4.875 8.95085 4.875 7.50082C4.875 6.05325 6.05293 4.875 7.5 4.875ZM7.49858 8.81285C8.22277 8.81285 8.80965 8.22181 8.80965 7.4967C8.80965 6.77104 8.22222 6.18 7.49858 6.18C6.77549 6.18 6.1875 6.76939 6.1875 7.4956C6.1875 8.22181 6.77549 8.81285 7.49858 8.81285Z"
-                fill="#BCBFC2" />
-            </svg>
-            <span class="questions__span">1,904</span>
+        <a href="#">
+          <img src="img/questions/1.png" alt="" class="questions-item__img">
+          <h3 class="questions-item__title">Техника работы по помидоркам — это как?</h3>
+          <div class="questions-block">
+            <div class="questions-view">
+              <svg class="questions-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15 7.26196C15 7.26196 12 12.375 7.5 12.375C3 12.375 0 7.26196 0 7.26196C0 7.26196 3 2.625 7.5 2.625C12 2.625 15 7.26196 15 7.26196ZM7.5 4.875C8.94707 4.875 10.125 6.05325 10.125 7.50082C10.125 8.94757 8.94707 10.125 7.5 10.125C6.05293 10.125 4.875 8.95085 4.875 7.50082C4.875 6.05325 6.05293 4.875 7.5 4.875ZM7.49858 8.81285C8.22277 8.81285 8.80965 8.22181 8.80965 7.4967C8.80965 6.77104 8.22222 6.18 7.49858 6.18C6.77549 6.18 6.1875 6.76939 6.1875 7.4956C6.1875 8.22181 6.77549 8.81285 7.49858 8.81285Z"
+                  fill="#BCBFC2" />
+              </svg>
+              <span class="questions__span">1,904</span>
+            </div>
+            <div class="questions-coment">
+              <svg class="questions-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
+                  fill="#BCBFC2" />
+              </svg>
+              <span class="questions__span">82</span>
+            </div>
           </div>
-          <div class="questions-coment">
-            <svg class="questions-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
-                fill="#BCBFC2" />
-            </svg>
-            <span class="questions__span">82</span>
-          </div>
-        </div>
+        </a>
       </div>
       <div class="questions-item">
-        <img src="img/questions/2.png" alt="" class="questions-item__img">
-        <h3 class="questions-item__title">Вопросы на собеседовании для джуна</h3>
-        <div class="questions-block">
-          <div class="questions-view">
-            <svg class="questions-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M15 7.26196C15 7.26196 12 12.375 7.5 12.375C3 12.375 0 7.26196 0 7.26196C0 7.26196 3 2.625 7.5 2.625C12 2.625 15 7.26196 15 7.26196ZM7.5 4.875C8.94707 4.875 10.125 6.05325 10.125 7.50082C10.125 8.94757 8.94707 10.125 7.5 10.125C6.05293 10.125 4.875 8.95085 4.875 7.50082C4.875 6.05325 6.05293 4.875 7.5 4.875ZM7.49858 8.81285C8.22277 8.81285 8.80965 8.22181 8.80965 7.4967C8.80965 6.77104 8.22222 6.18 7.49858 6.18C6.77549 6.18 6.1875 6.76939 6.1875 7.4956C6.1875 8.22181 6.77549 8.81285 7.49858 8.81285Z"
-                fill="#BCBFC2" />
-            </svg>
-            <span class="questions__span">2,873</span>
+        <a href="#">
+          <img src="img/questions/2.png" alt="" class="questions-item__img">
+          <h3 class="questions-item__title">Вопросы на собеседовании для джуна</h3>
+          <div class="questions-block">
+            <div class="questions-view">
+              <svg class="questions-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15 7.26196C15 7.26196 12 12.375 7.5 12.375C3 12.375 0 7.26196 0 7.26196C0 7.26196 3 2.625 7.5 2.625C12 2.625 15 7.26196 15 7.26196ZM7.5 4.875C8.94707 4.875 10.125 6.05325 10.125 7.50082C10.125 8.94757 8.94707 10.125 7.5 10.125C6.05293 10.125 4.875 8.95085 4.875 7.50082C4.875 6.05325 6.05293 4.875 7.5 4.875ZM7.49858 8.81285C8.22277 8.81285 8.80965 8.22181 8.80965 7.4967C8.80965 6.77104 8.22222 6.18 7.49858 6.18C6.77549 6.18 6.1875 6.76939 6.1875 7.4956C6.1875 8.22181 6.77549 8.81285 7.49858 8.81285Z"
+                  fill="#BCBFC2" />
+              </svg>
+              <span class="questions__span">2,873</span>
+            </div>
+            <div class="questions-coment">
+              <svg class="questions-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
+                  fill="#BCBFC2" />
+              </svg>
+              <span class="questions__span">982</span>
+            </div>
           </div>
-          <div class="questions-coment">
-            <svg class="questions-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
-                fill="#BCBFC2" />
-            </svg>
-            <span class="questions__span">982</span>
-          </div>
-        </div>
+        </a>
       </div>
       <div class="questions-item">
-        <img src="img/questions/3.png" alt="" class="questions-item__img">
-        <h3 class="questions-item__title">Список стран, куда можно улететь</h3>
-        <div class="questions-block">
-          <div class="questions-view">
-            <svg class="questions-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M15 7.26196C15 7.26196 12 12.375 7.5 12.375C3 12.375 0 7.26196 0 7.26196C0 7.26196 3 2.625 7.5 2.625C12 2.625 15 7.26196 15 7.26196ZM7.5 4.875C8.94707 4.875 10.125 6.05325 10.125 7.50082C10.125 8.94757 8.94707 10.125 7.5 10.125C6.05293 10.125 4.875 8.95085 4.875 7.50082C4.875 6.05325 6.05293 4.875 7.5 4.875ZM7.49858 8.81285C8.22277 8.81285 8.80965 8.22181 8.80965 7.4967C8.80965 6.77104 8.22222 6.18 7.49858 6.18C6.77549 6.18 6.1875 6.76939 6.1875 7.4956C6.1875 8.22181 6.77549 8.81285 7.49858 8.81285Z"
-                fill="#BCBFC2" />
-            </svg>
-            <span class="questions__span">821</span>
+        <a href="#">
+          <img src="img/questions/3.png" alt="" class="questions-item__img">
+          <h3 class="questions-item__title">Список стран, куда можно улететь</h3>
+          <div class="questions-block">
+            <div class="questions-view">
+              <svg class="questions-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15 7.26196C15 7.26196 12 12.375 7.5 12.375C3 12.375 0 7.26196 0 7.26196C0 7.26196 3 2.625 7.5 2.625C12 2.625 15 7.26196 15 7.26196ZM7.5 4.875C8.94707 4.875 10.125 6.05325 10.125 7.50082C10.125 8.94757 8.94707 10.125 7.5 10.125C6.05293 10.125 4.875 8.95085 4.875 7.50082C4.875 6.05325 6.05293 4.875 7.5 4.875ZM7.49858 8.81285C8.22277 8.81285 8.80965 8.22181 8.80965 7.4967C8.80965 6.77104 8.22222 6.18 7.49858 6.18C6.77549 6.18 6.1875 6.76939 6.1875 7.4956C6.1875 8.22181 6.77549 8.81285 7.49858 8.81285Z"
+                  fill="#BCBFC2" />
+              </svg>
+              <span class="questions__span">821</span>
+            </div>
+            <div class="questions-coment">
+              <svg class="questions-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
+                  fill="#BCBFC2" />
+              </svg>
+              <span class="questions__span">30</span>
+            </div>
           </div>
-          <div class="questions-coment">
-            <svg class="questions-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
-                fill="#BCBFC2" />
-            </svg>
-            <span class="questions__span">30</span>
-          </div>
-        </div>
+        </a>
       </div>
       <div class="questions-item">
-        <img src="img/questions/4.png" alt="" class="questions-item__img">
-        <h3 class="questions-item__title">В вашем портфолио могут быть фейковые работы</h3>
-        <div class="questions-block">
-          <div class="questions-view">
-            <svg class="questions-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M15 7.26196C15 7.26196 12 12.375 7.5 12.375C3 12.375 0 7.26196 0 7.26196C0 7.26196 3 2.625 7.5 2.625C12 2.625 15 7.26196 15 7.26196ZM7.5 4.875C8.94707 4.875 10.125 6.05325 10.125 7.50082C10.125 8.94757 8.94707 10.125 7.5 10.125C6.05293 10.125 4.875 8.95085 4.875 7.50082C4.875 6.05325 6.05293 4.875 7.5 4.875ZM7.49858 8.81285C8.22277 8.81285 8.80965 8.22181 8.80965 7.4967C8.80965 6.77104 8.22222 6.18 7.49858 6.18C6.77549 6.18 6.1875 6.76939 6.1875 7.4956C6.1875 8.22181 6.77549 8.81285 7.49858 8.81285Z"
-                fill="#BCBFC2" />
-            </svg>
-            <span class="questions__span">5,030</span>
+        <a href="#">
+          <img src="img/questions/4.png" alt="" class="questions-item__img">
+          <h3 class="questions-item__title">В вашем портфолио могут быть фейковые работы</h3>
+          <div class="questions-block">
+            <div class="questions-view">
+              <svg class="questions-icon" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15 7.26196C15 7.26196 12 12.375 7.5 12.375C3 12.375 0 7.26196 0 7.26196C0 7.26196 3 2.625 7.5 2.625C12 2.625 15 7.26196 15 7.26196ZM7.5 4.875C8.94707 4.875 10.125 6.05325 10.125 7.50082C10.125 8.94757 8.94707 10.125 7.5 10.125C6.05293 10.125 4.875 8.95085 4.875 7.50082C4.875 6.05325 6.05293 4.875 7.5 4.875ZM7.49858 8.81285C8.22277 8.81285 8.80965 8.22181 8.80965 7.4967C8.80965 6.77104 8.22222 6.18 7.49858 6.18C6.77549 6.18 6.1875 6.76939 6.1875 7.4956C6.1875 8.22181 6.77549 8.81285 7.49858 8.81285Z"
+                  fill="#BCBFC2" />
+              </svg>
+              <span class="questions__span">5,030</span>
+            </div>
+            <div class="questions-coment">
+              <svg class="questions-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
+                  fill="#BCBFC2" />
+              </svg>
+              <span class="questions__span">495</span>
+            </div>
           </div>
-          <div class="questions-coment">
-            <svg class="questions-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z"
-                fill="#BCBFC2" />
-            </svg>
-            <span class="questions__span">495</span>
-          </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -473,7 +470,7 @@
           </div>
         </div>
       </li>
-      <li class="coment-item">
+      <li class="coment-item coment-item--pl">
         <div class="coment-item-photo coment-item-photo--left">
           <img src="img/paragraf-autor__img.png" alt="#" class="coment-item__image">
         </div>
@@ -590,6 +587,84 @@
           </div>
         </div>
       </li>
+      <ul class="coment-item-wrap">
+        <li class="coment-item coment-item--brb">
+          <div class="coment-item-photo">
+            <img src="img/kris.png" alt="#" class="coment-item__image">
+          </div>
+          <div class="coment-item-info">
+            <div class="coment-item-about">
+              <h3 class="coment-item-about__title">Крис Яков</h3>
+              <div class="coment-item-about__date">17 июля, 19:12</div>
+            </div>
+            <p class="coment-item-info__text">Такой режим уже давно работает в продвинутых странах, почему его ввели
+              только сейчас, непонятно. Хотелось бы, чтобы это
+              все заработало в моем регионе, буду в числе первых!</p>
+            <div class="coment-item-block">
+              <div class="coment-item-coment">
+                <svg class="coment-item__icon" width="15" height="15" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z" />
+                </svg>
+                <span class="coment-item-coment__span">Ответить</span>
+              </div>
+              <div class="coment-item-like">
+                <svg class="coment-item__icon coment-item__icon--like" width="15" height="15" viewBox="0 0 15 15"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.5 12.75C1.08579 12.75 0.75 12.4142 0.75 12V5.25001C0.75 4.83579 1.08579 4.50001 1.5 4.50001H2.25C2.66421 4.50001 3 4.83579 3 5.25001V12C3 12.4142 2.66421 12.75 2.25 12.75H1.5ZM13.0227 4.20939C13.6977 4.20939 14.25 4.80066 14.25 5.52331C14.2403 6.52762 14.2162 7.08155 14.1778 7.18508C14.1394 7.28861 13.5089 8.8808 12.2864 11.9616C12.1023 12.4215 10.5902 12.75 10.0993 12.75H5.79C5.115 12.75 4.125 12.1587 4.125 11.4361V4.50001L8.19543 0.287946L8.19774 0.285557C8.55929 -0.0859288 9.15354 -0.0939831 9.52502 0.267568C9.64773 0.464659 9.77045 0.727447 9.77045 0.990235C9.77045 1.05593 9.77045 1.12163 9.77045 1.18733L9.15682 4.20939H13.0227Z" />
+                </svg>
+                0
+              </div>
+              <div class="coment-item-relike">
+                <svg class="coment-item__icon coment-item__icon--relike" width="15" height="15" viewBox="0 0 15 15"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.5 2.24999C13.9142 2.24999 14.25 2.58578 14.25 2.99999V9.74999C14.25 10.1642 13.9142 10.5 13.5 10.5H12.75C12.3358 10.5 12 10.1642 12 9.74999V2.99999C12 2.58578 12.3358 2.24999 12.75 2.24999H13.5ZM1.97727 10.7906C1.30227 10.7906 0.75 10.1993 0.75 9.47669C0.759695 8.47238 0.783758 7.91845 0.822192 7.81492C0.860626 7.71139 1.49111 6.1192 2.71364 3.03836C2.89773 2.57848 4.40981 2.24999 4.90072 2.24999H9.21C9.885 2.24999 10.875 2.84127 10.875 3.56394V10.5L6.80457 14.7121L6.80226 14.7144C6.44071 15.0859 5.84646 15.094 5.47498 14.7324C5.35227 14.5353 5.22955 14.2726 5.22955 14.0098C5.22955 13.9441 5.22955 13.8784 5.22955 13.8127L5.84318 10.7906H1.97727Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="coment-item coment-item--brb">
+          <div class="coment-item-photo">
+            <img src="img/kris.png" alt="#" class="coment-item__image">
+          </div>
+          <div class="coment-item-info">
+            <div class="coment-item-about">
+              <h3 class="coment-item-about__title">Крис Яков</h3>
+              <div class="coment-item-about__date">17 июля, 19:12</div>
+            </div>
+            <p class="coment-item-info__text">Такой режим уже давно работает в продвинутых странах, почему его ввели
+              только сейчас, непонятно. Хотелось бы, чтобы это
+              все заработало в моем регионе, буду в числе первых!</p>
+            <div class="coment-item-block">
+              <div class="coment-item-coment">
+                <svg class="coment-item__icon" width="15" height="15" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.1346 10.9998V13.9998L8.36064 10.9998H2.25C1.42157 10.9998 0.75 10.3282 0.75 9.49976V1.99976C0.75 1.17133 1.42157 0.499756 2.25 0.499756H12.75C13.5784 0.499756 14.25 1.17133 14.25 1.99976V9.49976C14.25 10.3282 13.5784 10.9998 12.75 10.9998H11.1346Z" />
+                </svg>
+                <span class="coment-item-coment__span">Ответить</span>
+              </div>
+              <div class="coment-item-like">
+                <svg class="coment-item__icon coment-item__icon--like" width="15" height="15" viewBox="0 0 15 15"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.5 12.75C1.08579 12.75 0.75 12.4142 0.75 12V5.25001C0.75 4.83579 1.08579 4.50001 1.5 4.50001H2.25C2.66421 4.50001 3 4.83579 3 5.25001V12C3 12.4142 2.66421 12.75 2.25 12.75H1.5ZM13.0227 4.20939C13.6977 4.20939 14.25 4.80066 14.25 5.52331C14.2403 6.52762 14.2162 7.08155 14.1778 7.18508C14.1394 7.28861 13.5089 8.8808 12.2864 11.9616C12.1023 12.4215 10.5902 12.75 10.0993 12.75H5.79C5.115 12.75 4.125 12.1587 4.125 11.4361V4.50001L8.19543 0.287946L8.19774 0.285557C8.55929 -0.0859288 9.15354 -0.0939831 9.52502 0.267568C9.64773 0.464659 9.77045 0.727447 9.77045 0.990235C9.77045 1.05593 9.77045 1.12163 9.77045 1.18733L9.15682 4.20939H13.0227Z" />
+                </svg>
+                0
+              </div>
+              <div class="coment-item-relike">
+                <svg class="coment-item__icon coment-item__icon--relike" width="15" height="15" viewBox="0 0 15 15"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.5 2.24999C13.9142 2.24999 14.25 2.58578 14.25 2.99999V9.74999C14.25 10.1642 13.9142 10.5 13.5 10.5H12.75C12.3358 10.5 12 10.1642 12 9.74999V2.99999C12 2.58578 12.3358 2.24999 12.75 2.24999H13.5ZM1.97727 10.7906C1.30227 10.7906 0.75 10.1993 0.75 9.47669C0.759695 8.47238 0.783758 7.91845 0.822192 7.81492C0.860626 7.71139 1.49111 6.1192 2.71364 3.03836C2.89773 2.57848 4.40981 2.24999 4.90072 2.24999H9.21C9.885 2.24999 10.875 2.84127 10.875 3.56394V10.5L6.80457 14.7121L6.80226 14.7144C6.44071 15.0859 5.84646 15.094 5.47498 14.7324C5.35227 14.5353 5.22955 14.2726 5.22955 14.0098C5.22955 13.9441 5.22955 13.8784 5.22955 13.8127L5.84318 10.7906H1.97727Z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
       <button class="coment-button-send">
         <svg class="coment-button-send-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"

@@ -70,7 +70,9 @@ $(document).ready(function(){
   $(".modal__form").validate();
 
   $(".navbar-top__menu-button").click(function () {
-    $(".header-mobi-menu").toggleClass("header-mobi-menu--visible");
-    
+    $(".header-mobi-menu").toggleClass("header-mobi-menu--visible"); 
   });
+  $(".coment-button-send").click(function () {
+    $(".coment-item-wrap").toggleClass("coment-item-wrap--active");
+  });  
 });

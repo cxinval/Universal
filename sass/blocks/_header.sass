@@ -3,6 +3,15 @@
   
   min-height: 673px
   max-height: 673px
+  &-search-button
+    max-width: 263px
+    width: 100%
+    position: relative
+    &__icon
+      position: absolute
+      top: 10px
+      right: 25px
+      cursor: pointer
   &-mobi-menu
     display: none
   &-aricle
@@ -29,11 +38,11 @@
       line-height: 20px
       color: #ffffff
       &:hover
-        color: rgba(255, 255, 255, 0.6)
+        opacity: 0.8
       &--article
         color: #939699
         &:hover
-          color: rgba(147, 150, 153, 0.8)
+          opacity: 0.8
           
 
     &__search
@@ -43,15 +52,12 @@
       max-width: 263px
       width: 100%
       min-height: 40px
-      padding: 9px 0 10px 25px
+      padding: 9px 50px 10px 25px
       font-style: normal
       font-weight: normal
       font-size: 14px
       line-height: 20px
       border: none
-      background-image: url(../img/header-navbar__search.svg)
-      background-repeat: no-repeat
-      background-position: top 9px right 26px
       background-size: 18px 18px
       &::placeholder
         color: #939699
@@ -112,6 +118,7 @@
     &-item
       border-top: 1px solid #D9DADB
       padding-left: 25px
+      padding-right: 25px
       cursor: pointer
       &--active
         background-color: #f5f5f5
@@ -151,6 +158,7 @@
     display: flex
     align-items: center
     margin-bottom: 145px
+    max-width: 208px
     &__img
       width: 45px
       height: 45px
@@ -159,6 +167,7 @@
       overflow: hidden
       margin-right: 10px
     &__name
+      white-space: nowrap
       margin-top: 0
       margin-bottom: 2px
       font-style: normal
@@ -190,13 +199,16 @@
       color: #4592FF
       margin-bottom: 20px
     &__title
+      max-width: 598px
+      overflow: hidden
+      text-overflow: ellipsis
       margin-top: 0
       font-style: normal
       font-weight: bold
       font-size: 40px
       line-height: 50px
       color: #FFFFFF
-      margin-bottom: 50px
+      margin-bottom: 32px
     &__button
       font-style: normal
       font-weight: 900

@@ -43,6 +43,7 @@
     justify-content: center
   &-items
     width: 100%
+    position: relative
     
   &-item
     overflow: hidden
@@ -50,6 +51,8 @@
     border: 1px solid #D9DADB
     width: 100% 
     min-height: 614px
+    max-height: 614px
+    z-index: -1
     &__img
       width: 100% !important
       max-height: 555px
@@ -58,6 +61,11 @@
       display: flex
       justify-content: space-between
       align-items: center
+      position: absolute
+      bottom: 0
+      right: 0
+      left: 0
+      z-index: 10
 
     &__text
       font-style: normal
@@ -73,11 +81,12 @@
       margin-right: 24px
       &::after
         content: ""
-        height: 152%
+        height: 173%
         width: 1px
         background-color: #D9DADB
         position: absolute
         left: 0
+        top: -4px
 
       &__icon
         width: 45px

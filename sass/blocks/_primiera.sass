@@ -20,7 +20,7 @@
       align-items: center
       justify-content: space-between
       z-index: 1
-      &:not(:last-child)::before
+      &::before
         content: ""
         width: 1px
         height: 100%
@@ -29,6 +29,8 @@
         right: -25px
         background: #4B5157
         z-index: 99
+          
+
 
     &__title
       font-style: normal
@@ -39,7 +41,7 @@
       text-align: start
       max-width: 154px
       &:hover
-        color: rgba(255, 255, 255, 0.8)
+        opacity: 0.8
     &__img
       object-fit: cover
       width: 65px

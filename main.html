@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Universal</title>
@@ -25,7 +25,11 @@
         <li class="header-navbar__link">JavaScript</li>
         <li class="header-navbar__link">Web Design</li>
       </ul>
-      <input type="text" class="header-navbar__search" placeholder="Поиск">
+      <div class="header-search-button">
+        <input type="text" class="header-navbar__search" placeholder="Поиск">
+        <img src="img/header-navbar__search.svg" alt="" class="header-search-button__icon">
+      </div>
+
       <button class="button menu-button navbar-top__menu-button">
         <span class="menu-button__line"></span>
         <span class="menu-button__line"></span>
@@ -46,7 +50,7 @@
     </div>
     <div class="header-information">
       <div id="js" class="header-information-left header-information-left--active">
-        <div class="header-autor">
+        <a href="#" class="header-autor">
           <div class="header-autor__img">
             <img src="img/header-autor__img.png" alt="">
           </div>
@@ -58,11 +62,13 @@
             <!-- /.header-autor__position -->
           </div>
           <!-- /.header-autor__info -->
-        </div>
+        </a>
         <!-- /.header-autor -->
         <div class="header-info">
-          <span class="header-info__subtitle">Javascript</span>
-          <h1 class="title header-info__title">Расширение Chrome<br> защищает от атак</h1>
+          <a href="#"><span class="header-info__subtitle">Javascript</span></a>
+          <a href="article.html">
+            <h1 class="title header-info__title">Расширение Chrome<br> защищает от атак</h1>
+          </a>
           <a href="article.html" class="button header-info__button">Читать далее
             <svg class="header-info__icon" width="15" height="7" viewBox="0 0 15 7" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +96,9 @@
         <!-- /.header-autor -->
         <div class="header-info">
           <span class="header-info__subtitle" style="color: #3BBDC4;">css</span>
-          <h1 class="title header-info__title">Как использовать Flexbox?</h1>
+          <a href="article.html">
+            <h1 class="title header-info__title">Как использовать Flexbox?</h1>
+          </a>
           <a href="article.html" class="button header-info__button">Читать далее
             <svg class="header-info__icon" width="15" height="7" viewBox="0 0 15 7" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -118,7 +126,10 @@
         <!-- /.header-autor -->
         <div class="header-info">
           <span class="header-info__subtitle">Html</span>
-          <h1 class="title header-info__title">Правильно вставляем картинку</h1>
+          <a href="article.html">
+            <h1 class="title header-info__title">Правильно вставляем картинку</h1>
+          </a>
+
           <a href="article.html" class="button header-info__button">Читать далее
             <svg class="header-info__icon" width="15" height="7" viewBox="0 0 15 7" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +157,9 @@
         <!-- /.header-autor -->
         <div class="header-info">
           <span class="header-info__subtitle">Web design</span>
-          <h1 class="title header-info__title">ТОП-10 плагинов для Figma</h1>
+          <a href="article.html">
+            <h1 class="title header-info__title">ТОП-10 плагинов для Figma</h1>
+          </a>
           <a href="article.html" class="button header-info__button">Читать далее
             <svg class="header-info__icon" width="15" height="7" viewBox="0 0 15 7" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -174,7 +187,9 @@
         <!-- /.header-autor -->
         <div class="header-info">
           <span class="header-info__subtitle">css</span>
-          <h1 class="title header-info__title">Возможности CSS Grid Layout</h1>
+          <a href="article">
+            <h1 class="title header-info__title">Возможности CSS Grid Layout</h1>
+          </a>
           <a href="article.html" class="button header-info__button">Читать далее
             <svg class="header-info__icon" width="15" height="7" viewBox="0 0 15 7" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -221,20 +236,24 @@
   <div class="container">
     <div class="primiera-wrap">
       <div class="primiera-wrap-item">
-        <a href="#" class="primiera-wrap__title">25 способов настроить слайдер</a>
-        <img src="img/primiera/1.png" alt="#" class="primiera-wrap__img">
+        <a href="article.html" class="primiera-wrap__title">25 способов настроить слайдер</a>
+        <a href="article.html"><img src="img/primiera/1.png" alt="#" class="primiera-wrap__img"></a>
+
       </div>
       <div class="primiera-wrap-item">
-        <a href="#" class="primiera-wrap__title">Главные фишки фрилансера</a>
-        <img src="img/primiera/2.png" alt="#" class="primiera-wrap__img">
+        <a href="article.html" class="primiera-wrap__title">Главные фишки фрилансера</a>
+        <a href="article.html"><img src="img/primiera/2.png" alt="#" class="primiera-wrap__img"></a>
+
       </div>
       <div class="primiera-wrap-item">
-        <a href="#" class="primiera-wrap__title">Техника управлеия временем “Помодоро”</a>
-        <img src="img/primiera/3.png" alt="#" class="primiera-wrap__img">
+        <a href="article.html" class="primiera-wrap__title">Техника управлеия временем “Помодоро”</a>
+        <a href="article.html"><img src="img/primiera/3.png" alt="#" class="primiera-wrap__img"></a>
+
       </div>
       <div class="primiera-wrap-item">
-        <a href="#" class="primiera-wrap__title">Что нужно знать о Git и GitHub</a>
-        <img src="img/primiera/4.png" alt="#" class="primiera-wrap__img">
+        <a href="article.html" class="primiera-wrap__title">Что нужно знать о Git и GitHub</a>
+        <a href="article.html"><img src="img/primiera/4.png" alt="#" class="primiera-wrap__img"></a>
+
       </div>
     </div>
     <!-- /.primiera-wrap -->
@@ -243,7 +262,7 @@
 <section class="articles">
   <div class="container articles-container">
     <div class="articles-items">
-      <div class="articles-frist">
+      <a href="article.html" class="articles-frist">
         <span class="articles-frist__span">Статьи</span>
         <h3 class="title articles-frist__title">Вам предложили работу мечты, но вы не можете...</h3>
         <p class="articles-frist__text">Как поступить, если хочется пойти на работу мечты, но она находится в другом
@@ -261,8 +280,8 @@
           <span class="articles-frist-coment__number">342</span>
 
         </div>
-      </div>
-      <div class="articles-second">
+      </a>
+      <a href="article.html" class="articles-second">
         <div class="articles-second__popular">Популярное</div>
         <span class="articles-second__title">Web design</span>
         <p class="articles-second__text">Где взять реальные проекты для портфолио</p>
@@ -285,66 +304,69 @@
             <span class="articles-second-coment__number">832</span>
           </div>
         </div>
-      </div>
+      </a>
       <div class="articles-third">
-        <h3 class="articles-third__title">Чек-лист сдачи верстки вашему заказчику</h3>
-        <span class="articles-third__pdf">PDF, 125 Мб</span>
-        <div class="articles-third-download">
+        <a class="articles-third__wrap" href="article.html">
+          <h3 class="articles-third__title">Чек-лист сдачи верстки вашему заказчику</h3>
+          <span class="articles-third__pdf">PDF, 125 Мб</span>
+        </a>
+        <a href="article.html" class="articles-third-download">
           <svg class="articles-third-download__icon" width="17" height="17" viewBox="0 0 17 17"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M16 12.4262C16 12.1887 16.2626 12 16.5 12C16.7374 12 17 12.1887 17 12.4262V16.56C17 16.7974 16.8051 17 16.5677 17H0.42616C0.188723 17 0 16.7974 0 16.56V12.4262C0 12.1887 0.262562 12 0.5 12C0.737438 12 1 12.1887 1 12.4262V16H16V12.4262ZM9 0V10H12L8.5 14L5 10H8V0H9Z" />
           </svg>
-          <a href="#" class="articles-third-download__link">Скачать</a>
-        </div>
+          <span class="articles-third-download__link">Скачать</span>
+        </a>
+        </a>
       </div>
       <!-- /.articles-third -->
       <div class="articles-forth">
         <div class="articles-forth__title">теги</div>
         <div class="articles-forth-links">
-          <a href="#" class="articles-forth__link">Forest</a>
-          <a href="#" class="articles-forth__link">Hover tag</a>
-          <a href="#" class="articles-forth__link">Nature</a>
-          <a href="#" class="articles-forth__link">Recreation</a>
-          <a href="#" class="articles-forth__link">Tent</a>
-          <a href="#" class="articles-forth__link">Fresh air</a>
-          <a href="#" class="articles-forth__link">Summer</a>
-          <a href="#" class="articles-forth__link">Mountains</a>
-          <a href="#" class="articles-forth__link">Wood</a>
-          <a href="#" class="articles-forth__link">Map</a>
-          <a href="#" class="articles-forth__link">Sun</a>
-          <a href="#" class="articles-forth__link">Wild animals</a>
-          <a href="#" class="articles-forth__link">Night</a>
+          <a href="article.html" class="articles-forth__link">Forest</a>
+          <a href="article.html" class="articles-forth__link">Hover tag</a>
+          <a href="article.html" class="articles-forth__link">Nature</a>
+          <a href="article.html" class="articles-forth__link">Recreation</a>
+          <a href="article.html" class="articles-forth__link">Tent</a>
+          <a href="article.html" class="articles-forth__link">Fresh air</a>
+          <a href="article.html" class="articles-forth__link">Summer</a>
+          <a href="article.html" class="articles-forth__link">Mountains</a>
+          <a href="article.html" class="articles-forth__link">Wood</a>
+          <a href="article.html" class="articles-forth__link">Map</a>
+          <a href="article.html" class="articles-forth__link">Sun</a>
+          <a href="article.html" class="articles-forth__link">Wild animals</a>
+          <a href="article.html" class="articles-forth__link">Night</a>
         </div>
       </div>
       <!-- /.articles-forth -->
-      <div class="articles-fifth">
+      <a href="#" class="articles-fifth">
         <img src="img/articles-fifth__img.png" alt="" class="articles-fifth__img">
         <h3 class="articles-fifth__title">20+ инструментов <br>для js-разработчика</h3>
-      </div>
+      </a>
       <!-- /.articles-fifth -->
-      <div class="articles-item articles-sixth">
+      <a href="article.html" class="articles-item articles-sixth">
         <h3 class="articles-item__title">Удачные референсы</h3>
         <p class="articles-item__text">Как выбрать подходящие исходники, если вы ищите идею для интерфейса</p>
         <span class="articles-item__data">15 октября</span>
-      </div>
-      <div class="articles-item articles-seventh">
+      </a>
+      <a href="article.html" class="articles-item articles-seventh">
         <h3 class="articles-item__title">Заказчики — мудаки?</h3>
         <p class="articles-item__text">Как защититься от бесконечных правок на этапе сдачи проекта</p>
         <span class="articles-item__data articles-item__data--mt">20 октября</span>
-      </div>
-      <div class="articles-item articles-eighth">
+      </a>
+      <a href="article.html" class="articles-item articles-eighth">
         <h3 class="articles-item__title">Работа без стресса — это...</h3>
         <p class="articles-item__text">Обустройте свое рабочее место так, чтобы не испытывать раздражение от
           скрипучего...</p>
         <span class="articles-item__data">26 октября</span>
-      </div>
-      <div class="articles-item articles-ninth">
+      </a>
+      <a href="article.html" class="articles-item articles-ninth">
         <h3 class="articles-item__title">Бесплатные методы...</h3>
         <p class="articles-item__text">Как не платить за софт, если у вас есть студенческий билет высшего учебного
           заведения</p>
         <span class="articles-item__data">13 октября</span>
-      </div>
+      </a>
       <div class="articles-tens">
         <h3 class="articles-tens__title">Наши соцсети</h3>
         <div class="articles-tens-social">
@@ -374,7 +396,7 @@
   <div class="container information-container">
     <div class="information-left">
       <div class="information-left-items">
-        <div class="information-left-item">
+        <a href="article.html" class="information-left-item">
           <img src="img/information-left/1.png" alt="" class="information-left__img">
           <div class="information-left-wrap">
             <span class="information-left__span" style="color: #4592FF;">Новости</span>
@@ -404,9 +426,9 @@
             </svg>
 
           </div>
-        </div>
+        </a>
         <!-- /.information-left-item -->
-        <div class="information-left-item">
+        <a href="article.html" class="information-left-item">
           <img src="img/information-left/2.png" alt="" class="information-left__img">
           <div class="information-left-wrap">
             <span class="information-left__span" style="color: #3BBDC4;">Мнения</span>
@@ -436,9 +458,9 @@
             </svg>
 
           </div>
-        </div>
+        </a>
         <!-- /.information-left-item -->
-        <div class="information-left-item">
+        <a href="article.html" class="information-left-item">
           <img src="img/information-left/3.png" alt="" class="information-left__img">
           <div class="information-left-wrap">
             <span class="information-left__span" style="color: #3BBDC4;">Горячее</span>
@@ -469,13 +491,13 @@
             </svg>
 
           </div>
-        </div>
+        </a>
         <!-- /.information-left-item -->
-        <div class="information-left-item">
+        <a href="article.html" class="information-left-item">
           <img src="img/information-left/4.png" alt="" class="information-left__img">
           <div class="information-left-wrap">
             <span class="information-left__span" style="color: #3BBDC4;">Мнения</span>
-            <h3 class="information-left__title">В вашем портфолио могут быть <br>фейковые проекты, если вы сделали...
+            <h3 class="information-left__title">В вашем портфолио могут быть фейковые проекты, если вы сделали...
             </h3>
             <p class="information-left__text">Один из читателей предположил, что если в портфолио положить
               несуществующий проект, то ничего страшного не произойдет.
@@ -502,9 +524,9 @@
             </svg>
 
           </div>
-        </div>
+        </a>
         <!-- /.information-left-item -->
-        <div class="information-left-item">
+        <a href="article.html" class="information-left-item">
           <img src="img/information-left/5.png" alt="" class="information-left__img">
           <div class="information-left-wrap">
             <span class="information-left__span" style="color: #FF4F52;">Горячее</span>
@@ -534,13 +556,13 @@
             </svg>
 
           </div>
-        </div>
+        </a>
         <!-- /.information-left-item -->
-        <div class="information-left-item">
+        <a href="article.html" class="information-left-item">
           <img src="img/information-left/6.png" alt="" class="information-left__img">
           <div class="information-left-wrap">
             <span class="information-left__span" style="color: #AC8EE3;">Подборки</span>
-            <h3 class="information-left__title">Список Youtube каналов для тех, кто <br>только начинает изучать
+            <h3 class="information-left__title">Список Youtube каналов для тех, кто только начинает изучать
               разработку</h3>
             <p class="information-left__text">Мы собрали на одной странице кучу ссылок на полезные русскоязычные
               каналы, посвященные айти. Тут можно найти видеоуроки,
@@ -567,7 +589,7 @@
             </svg>
 
           </div>
-        </div>
+        </a>
         <!-- /.information-left-item -->
       </div>
     </div>
@@ -682,124 +704,47 @@
 <section class="blocks">
   <div class="container blocks__container">
     <div class="blocks-frist">
-
       <div class="swiper-container swiper-blocks-frist">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide blocks-frist-item">
             <img src="img/blocks/slide1.jpg" alt="" class="blocks-frist__bgc">
-            <div class="blocks-frist-wrap">
-              <img src="img/blocks/1.png" alt="" class="blocks-frist__img">
-              <span class="blocks-frist__name">Оксана Пушкина</span>
-              <!-- /.blocks-frist__name -->
-              <span class="blocks-frist__position">Фотограф</span>
-              <!-- /.blocks-frist__position -->
-              <h2 class="title blocks-frist__title">Выбор читателей: где удобнее работать фрилансеру</h2>
-              <!-- /.blocks-frist__title -->
-              <a href="#" class="button blocks-frist__button">
-                <svg class="blocks-frist__icon" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M3.5 6V4C3.5 3.44772 3.94772 3 4.5 3H18.5C19.0523 3 19.5 3.44772 19.5 4V14C19.5 14.5523 19.0523 15 18.5 15H16.5V17C16.5 17.5523 16.0523 18 15.5 18H1.5C0.947715 18 0.5 17.5523 0.5 17V7C0.5 6.44772 0.947715 6 1.5 6H3.5ZM15.5 15H4.5C3.94772 15 3.5 14.5523 3.5 14V7H1.5V17H15.5V15ZM4.5 4V14H18.5V4H4.5ZM18.5 14H4.5V13L7.5 10L10.5 12L14.5 8L18.5 13V14ZM10 9C9.17157 9 8.5 8.32843 8.5 7.5C8.5 6.67157 9.17157 6 10 6C10.8284 6 11.5 6.67157 11.5 7.5C11.5 8.32843 10.8284 9 10 9Z"
-                    fill="white" />
-                </svg>
-                Смотреть фото
-                <span class="blocks-frist__number">26</span>
-              </a>
-            </div>
           </div>
           <div class="swiper-slide blocks-frist-item">
             <img src="img/blocks/slide1.jpg" alt="" class="blocks-frist__bgc">
-            <div class="blocks-frist-wrap">
-              <img src="img/blocks/1.png" alt="" class="blocks-frist__img">
-              <span class="blocks-frist__name">Оксана Пушкина</span>
-              <!-- /.blocks-frist__name -->
-              <span class="blocks-frist__position">Фотограф</span>
-              <!-- /.blocks-frist__position -->
-              <h2 class="title blocks-frist__title">Выбор читателей: где удобнее работать фрилансеру</h2>
-              <!-- /.blocks-frist__title -->
-              <a href="#" class="button blocks-frist__button">
-                <svg class="blocks-frist__icon" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M3.5 6V4C3.5 3.44772 3.94772 3 4.5 3H18.5C19.0523 3 19.5 3.44772 19.5 4V14C19.5 14.5523 19.0523 15 18.5 15H16.5V17C16.5 17.5523 16.0523 18 15.5 18H1.5C0.947715 18 0.5 17.5523 0.5 17V7C0.5 6.44772 0.947715 6 1.5 6H3.5ZM15.5 15H4.5C3.94772 15 3.5 14.5523 3.5 14V7H1.5V17H15.5V15ZM4.5 4V14H18.5V4H4.5ZM18.5 14H4.5V13L7.5 10L10.5 12L14.5 8L18.5 13V14ZM10 9C9.17157 9 8.5 8.32843 8.5 7.5C8.5 6.67157 9.17157 6 10 6C10.8284 6 11.5 6.67157 11.5 7.5C11.5 8.32843 10.8284 9 10 9Z"
-                    fill="white" />
-                </svg>
-                Смотреть фото
-                <span class="blocks-frist__number">26</span>
-              </a>
-            </div>
           </div>
           <div class="swiper-slide blocks-frist-item">
             <img src="img/blocks/slide1.jpg" alt="" class="blocks-frist__bgc">
-            <div class="blocks-frist-wrap">
-              <img src="img/blocks/1.png" alt="" class="blocks-frist__img">
-              <span class="blocks-frist__name">Оксана Пушкина</span>
-              <!-- /.blocks-frist__name -->
-              <span class="blocks-frist__position">Фотограф</span>
-              <!-- /.blocks-frist__position -->
-              <h2 class="title blocks-frist__title">Выбор читателей: где удобнее работать фрилансеру</h2>
-              <!-- /.blocks-frist__title -->
-              <a href="#" class="button blocks-frist__button">
-                <svg class="blocks-frist__icon" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M3.5 6V4C3.5 3.44772 3.94772 3 4.5 3H18.5C19.0523 3 19.5 3.44772 19.5 4V14C19.5 14.5523 19.0523 15 18.5 15H16.5V17C16.5 17.5523 16.0523 18 15.5 18H1.5C0.947715 18 0.5 17.5523 0.5 17V7C0.5 6.44772 0.947715 6 1.5 6H3.5ZM15.5 15H4.5C3.94772 15 3.5 14.5523 3.5 14V7H1.5V17H15.5V15ZM4.5 4V14H18.5V4H4.5ZM18.5 14H4.5V13L7.5 10L10.5 12L14.5 8L18.5 13V14ZM10 9C9.17157 9 8.5 8.32843 8.5 7.5C8.5 6.67157 9.17157 6 10 6C10.8284 6 11.5 6.67157 11.5 7.5C11.5 8.32843 10.8284 9 10 9Z"
-                    fill="white" />
-                </svg>
-                Смотреть фото
-                <span class="blocks-frist__number">26</span>
-              </a>
-            </div>
           </div>
           <div class="swiper-slide blocks-frist-item">
             <img src="img/blocks/slide1.jpg" alt="" class="blocks-frist__bgc">
-            <div class="blocks-frist-wrap">
-              <img src="img/blocks/1.png" alt="" class="blocks-frist__img">
-              <span class="blocks-frist__name">Оксана Пушкина</span>
-              <!-- /.blocks-frist__name -->
-              <span class="blocks-frist__position">Фотограф</span>
-              <!-- /.blocks-frist__position -->
-              <h2 class="title blocks-frist__title">Выбор читателей: где удобнее работать фрилансеру</h2>
-              <!-- /.blocks-frist__title -->
-              <a href="#" class="button blocks-frist__button">
-                <svg class="blocks-frist__icon" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M3.5 6V4C3.5 3.44772 3.94772 3 4.5 3H18.5C19.0523 3 19.5 3.44772 19.5 4V14C19.5 14.5523 19.0523 15 18.5 15H16.5V17C16.5 17.5523 16.0523 18 15.5 18H1.5C0.947715 18 0.5 17.5523 0.5 17V7C0.5 6.44772 0.947715 6 1.5 6H3.5ZM15.5 15H4.5C3.94772 15 3.5 14.5523 3.5 14V7H1.5V17H15.5V15ZM4.5 4V14H18.5V4H4.5ZM18.5 14H4.5V13L7.5 10L10.5 12L14.5 8L18.5 13V14ZM10 9C9.17157 9 8.5 8.32843 8.5 7.5C8.5 6.67157 9.17157 6 10 6C10.8284 6 11.5 6.67157 11.5 7.5C11.5 8.32843 10.8284 9 10 9Z"
-                    fill="white" />
-                </svg>
-                Смотреть фото
-                <span class="blocks-frist__number">26</span>
-              </a>
-            </div>
           </div>
           <div class="swiper-slide blocks-frist-item">
             <img src="img/blocks/slide1.jpg" alt="" class="blocks-frist__bgc">
-            <div class="blocks-frist-wrap">
-              <img src="img/blocks/1.png" alt="" class="blocks-frist__img">
-              <span class="blocks-frist__name">Оксана Пушкина</span>
-              <!-- /.blocks-frist__name -->
-              <span class="blocks-frist__position">Фотограф</span>
-              <!-- /.blocks-frist__position -->
-              <h2 class="title blocks-frist__title">Выбор читателей: где удобнее работать фрилансеру</h2>
-              <!-- /.blocks-frist__title -->
-              <a href="#" class="button blocks-frist__button">
-                <svg class="blocks-frist__icon" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M3.5 6V4C3.5 3.44772 3.94772 3 4.5 3H18.5C19.0523 3 19.5 3.44772 19.5 4V14C19.5 14.5523 19.0523 15 18.5 15H16.5V17C16.5 17.5523 16.0523 18 15.5 18H1.5C0.947715 18 0.5 17.5523 0.5 17V7C0.5 6.44772 0.947715 6 1.5 6H3.5ZM15.5 15H4.5C3.94772 15 3.5 14.5523 3.5 14V7H1.5V17H15.5V15ZM4.5 4V14H18.5V4H4.5ZM18.5 14H4.5V13L7.5 10L10.5 12L14.5 8L18.5 13V14ZM10 9C9.17157 9 8.5 8.32843 8.5 7.5C8.5 6.67157 9.17157 6 10 6C10.8284 6 11.5 6.67157 11.5 7.5C11.5 8.32843 10.8284 9 10 9Z"
-                    fill="white" />
-                </svg>
-                Смотреть фото
-                <span class="blocks-frist__number">26</span>
-              </a>
-            </div>
           </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination swiper-blocks-frist__bull"></div>
+      </div>
+      <div class="blocks-frist-wrap">
+        <img src="img/blocks/1.png" alt="" class="blocks-frist__img">
+        <span class="blocks-frist__name">Оксана Пушкина</span>
+        <!-- /.blocks-frist__name -->
+        <span class="blocks-frist__position">Фотограф</span>
+        <!-- /.blocks-frist__position -->
+        <h2 class="title blocks-frist__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+        <!-- /.blocks-frist__title -->
+        <a href="#" class="button blocks-frist__button">
+          <svg class="blocks-frist__icon" width="21" height="20" viewBox="0 0 21 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M3.5 6V4C3.5 3.44772 3.94772 3 4.5 3H18.5C19.0523 3 19.5 3.44772 19.5 4V14C19.5 14.5523 19.0523 15 18.5 15H16.5V17C16.5 17.5523 16.0523 18 15.5 18H1.5C0.947715 18 0.5 17.5523 0.5 17V7C0.5 6.44772 0.947715 6 1.5 6H3.5ZM15.5 15H4.5C3.94772 15 3.5 14.5523 3.5 14V7H1.5V17H15.5V15ZM4.5 4V14H18.5V4H4.5ZM18.5 14H4.5V13L7.5 10L10.5 12L14.5 8L18.5 13V14ZM10 9C9.17157 9 8.5 8.32843 8.5 7.5C8.5 6.67157 9.17157 6 10 6C10.8284 6 11.5 6.67157 11.5 7.5C11.5 8.32843 10.8284 9 10 9Z"
+              fill="white" />
+          </svg>
+          Смотреть фото
+          <span class="blocks-frist__number">26</span>
+        </a>
       </div>
     </div>
     <!-- /.blocks-frist -->
@@ -808,7 +753,9 @@
         <img src="img/blocks/blocks__second.png" alt="" class="blocks-second__bgc">
         <div class="blocks-second-wrap">
           <span class="blocks-second__name">Карьера</span>
-          <h2 class="blocks-second__title">Вопросы на собеседовании для джуна</h2>
+          <a href="article.html">
+            <h2 class="blocks-second__title">Вопросы на собеседовании для джуна</h2>
+          </a>
           <p class="blocks-second__text">Каверзные и не очень вопросы, которых боятся новички, когда идут на
             собеседование</p>
           <a href="article.html" class="button blocks-second__button">
@@ -822,18 +769,18 @@
         </div>
       </div>
       <div class="blocks-third">
-        <div class="blocks-third-wrapper">
+        <a href="article.html" class="blocks-third-wrapper">
           <h3 class="blocks-third-wrapper__title">Зарядка для глаз</h3>
           <p class="blocks-third-wrapper__text">Эти несколько упражнений помогут сохранить зрение. Можно делать их даже
             если...</p>
           <span class="blocks-third-wrapper__date">15 октября</span>
-        </div>
-        <div class="blocks-third-wrapper">
+        </a>
+        <a href="article.html" class="blocks-third-wrapper">
           <h3 class="blocks-third-wrapper__title">Топ плагинов jQuery</h3>
           <p class="blocks-third-wrapper__text">Какие плагины помогут быстро создать галерею, выпадающие списки или окна
           </p>
           <span class="blocks-third-wrapper__date">14 октября</span>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -844,7 +791,7 @@
       <h2 class="mail__title">
         Подпишитесь на нашу рассылку
       </h2>
-      <form action="send.php" class="mail-form form1" method="POST">
+      <form action="send.php" class="mail-form form" method="POST">
         <input type="email" class="mail__input" name="mail" placeholder="Email" required minlength="5">
         <button class="button mail__button">Подписаться</button>
       </form>
@@ -932,8 +879,9 @@
       </div>
     </div>
     <div class="footer-info">
-      <p class="footer-info__text">Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи, новости, видеоуроки,
-      подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании, указывайте ссылку.</p>
+      <p class="footer-info__text">Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб
+        разработке: статьи, новости, видеоуроки,
+        подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании, указывайте ссылку.</p>
       <span class="footer-info__span">© 2020 Universal Magazine</span>
     </div>
   </div>
